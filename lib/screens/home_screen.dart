@@ -3,15 +3,6 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  /**
-   * The home page should be made with a StatelessWidget with a Column that fills the screen and is divided equally between two parts. 
-   * The top half uses an AssetImage as a background image. 
-   * The bottom half should have a dark background color with light coloured text in a Text() widget. 
-   * The color and font settings for the Text() widget should come from the Theme, not a custom TextStyle() widget.
-   * The Text() widget in the lower half should also have a transformation applied to it.
-
-   */
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
