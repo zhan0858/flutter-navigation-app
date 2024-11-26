@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: const ColorScheme(
           primary: Colors.yellow,
-          onPrimary: Colors.black,
+          onPrimary: Color.fromARGB(255, 119, 107, 0),
           secondary: Colors.purple,
           onSecondary: Colors.white,
           brightness: Brightness.light,
@@ -111,6 +111,7 @@ class _MainPageState extends State<MainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
         fixedColor: Colors.black,
         backgroundColor: Colors.yellow,
         items: const [

@@ -88,7 +88,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     keyboardType: TextInputType.multiline,
                     textInputAction: TextInputAction.next,
                     maxLines: 6,
-                    minLines: 6,
+                    minLines: 3,
                     initialValue: "",
                     decoration: const InputDecoration(
                         labelText: "Message",
@@ -118,7 +118,7 @@ class _ContactScreenState extends State<ContactScreen> {
                     },
                     icon: Icon(
                       Icons.send,
-                      color: Theme.of(context).colorScheme.secondary,
+                      color: Theme.of(context).colorScheme.onPrimary,
                     ),
                     label: Text("Send",
                         style: Theme.of(context).textTheme.headlineMedium),
