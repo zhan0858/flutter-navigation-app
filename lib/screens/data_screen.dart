@@ -33,7 +33,7 @@ class _DataScreenState extends State<DataScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: FutureBuilder<List<User>>(
-        future: fetchAlbum(),
+        future: users,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
@@ -47,10 +47,11 @@ class _DataScreenState extends State<DataScreen> {
           } else {
             final userList = snapshot.data!;
             return ListView.builder(
+              padding: const EdgeInsets.all(8.0),
               itemCount: userList.length,
               itemBuilder: (context, index) {
                 return Card(
-                    color: Colors.yellow[200],
+                    color: const Color.fromARGB(255, 233, 233, 247),
                     child: ListTile(
                       subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
